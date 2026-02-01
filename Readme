@@ -2,4 +2,6 @@
 
 lancement : docker compose up
 
-utilisation d'une première CI/CD
+utilisation d'une première CI/CD dans un contexe simple
+
+https://github.com/RomainMAURICE/HelloWorld_CI-CD
