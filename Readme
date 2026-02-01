@@ -1,0 +1,5 @@
+# First CI/CD
+
+lancement : docker compose up
+
+utilisation d'une première CI/CD
