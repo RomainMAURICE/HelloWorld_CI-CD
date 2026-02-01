@@ -72,6 +72,7 @@ jobs:
       # Ici : fonctions de transformation, nettoyage, calculs KPI
       - name: Lancer tests unitaires
         run: |
+          export PYTHONPATH=$PYTHONPATH:$(pwd)
           pytest
 
   # =====================================================
@@ -104,6 +105,7 @@ jobs:
       # Objectif : tester les requêtes SQL, le schéma et les interactions réelles
       - name: Lancer tests d’intégration
         run: |
+          export PYTHONPATH=$PYTHONPATH:$(pwd)
           pytest
 
   # =====================================================
@@ -136,6 +138,7 @@ jobs:
       # Objectif : détecter des régressions de performance
       - name: Benchmarks légers
         run: |
+          export PYTHONPATH=$PYTHONPATH:$(pwd)
           pytest --benchmark-only
 
   # =====================================================
